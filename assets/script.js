@@ -27,6 +27,11 @@ function calculate() {
     });
 }
 
+function calculate1() {
+    var number = Math.floor(Math.random() * 101);
+    document.getElementById("result").value = number;
+}
+
 function playAudio() {
     var audio = document.querySelector('audio');
     audio.play();
@@ -39,3 +44,4 @@ function options1() {
 function options2() {
     window.location.href = "riggedcal.html";
 }
+
