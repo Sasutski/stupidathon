@@ -2,6 +2,12 @@
 
 /* Center all text */
 body {
+    /* centre vetical and horizonral */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* centre end */
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #333; /* Dark mode background color */
@@ -15,10 +21,99 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30vh;
+
 }
 
 /* Additional styling for h1 elements */
 h1 {
     color: #ffffff; /* Adjust the color as needed */
     font-size: 2rem; /* Adjust the font size as needed */
+}
+
+.asian {
+    display: block;
+}
+
+
+.terms {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #a2a2a26a;
+    box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+
+#btn {
+    background-color: #008952;
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #20177c;
+    color: white;
+    border: solid rgba(0, 0, 0, 0.387) 2px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+.starter {
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    height: 50%; /* Increase height */
+    width: 100%; /* Increase width */
+
+    margin: 20px;
+}
+
+.starter2 {
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    height: 50%; /* Increase height */
+    width: 100%; /* Increase width */
+
+}
+
+.back {
+    float: left;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 0px;
 }

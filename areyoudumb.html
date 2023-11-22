@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsianMath</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <audio id="1" src="assets/areyoudumb.mp3" autoplay></audio>
+    <button onclick="playAudio()">Answer</button>
+    <script src="assets/script.js"></script>
+    <script>
+        var audio = document.getElementById("myAudio");
+         
+        audio.addEventListener("ended", function() {
+           window.location.href = "equation.html";
+        });
+       </script>
+</body>
+</html>

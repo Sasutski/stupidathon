@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+<head>
+  <meta charset="utf-8">
+  <title>AsianMath</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+ 
+<body>
+  <a href="options.html"><button class="back">Back</button></a>
+<table class="calculator" >
+  <tr>
+    <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+ 
+    <!-- clearScreen() function clears all the values -->
+    <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+  </tr>
+  <tr>
+    <!-- display() function displays the value of clicked button -->
+    <td> <input type="button" value="1" onclick="display('1')" /> </td>
+    <td> <input type="button" value="2" onclick="display('2')" /> </td>
+    <td> <input type="button" value="3" onclick="display('3')" /> </td>
+    <td> <input type="button" value="/" onclick="display('/')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="4" onclick="display('4')" /> </td>
+    <td> <input type="button" value="5" onclick="display('5')" /> </td>
+    <td> <input type="button" value="6" onclick="display('6')" /> </td>
+    <td> <input type="button" value="-" onclick="display('-')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="7" onclick="display('7')" /> </td>
+    <td> <input type="button" value="8" onclick="display('8')" /> </td>
+    <td> <input type="button" value="9" onclick="display('9')" /> </td>
+    <td> <input type="button" value="+" onclick="display('+')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="." onclick="display('.')" /> </td>
+    <td> <input type="button" value="0" onclick="display('0')" /> </td>
+ 
+    <!-- calculate() function evaluates the mathematical expression -->
+    <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+    <audio id="1" src="assets/areyoudumb.mp3" autoplay></audio>
+    <audio id="2" src="assets/2.mp3" autoplay></audio>
+    <audio id="3" src="assets/3.mp3" autoplay></audio>
+    <td> <input type="button" value="*" onclick="display('*')" /> </td>
+  </tr>
+</table>
+ 
+<script type="text/javascript" src="assets/script.js"></script>
+ 
+</body>
+ 
+</html>

@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AsianMath</title>
-    <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
     <div>
-        <h1>Welcome to AsianMath</h1>
+      <h1>Welcome to AsianMath</h1>
     </div>
-    <div>
+
+    <div id="asian">
+      <div>
         <h1>Are you Asian?</h1>
+      </div>
+      <div class="flex">
+          <button type="button" onclick="button()" class="starter">Yes</button>
+          <button type="button" onclick="button()" class="starter">Yes</button>
+      </div>
     </div>
-    <div>
-        <a href="problem.html">
-            <button type="button">Yes</button>
-            <button type="button">Yes</button>
+
+    <div id="terms" style="display:none;">
+      <div>
+        <h1>Terms and Conditions</h1>
+      </div>
+      <div>
+        <h1>Do you agree?</h1>
+      </div>
+      <div>
+        <a href="options.html">
+            <button type="button" class="starter2">Yes</button>
         </a>
+      </div>
     </div>
+
+    <script>
+        function button() {
+            document.getElementById("asian").style.display = "none";
+            document.getElementById("terms").style.display = "block";
+
+
+            
+
+        }
+    </script>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
