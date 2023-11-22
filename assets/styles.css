@@ -15,7 +15,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh; /* Adjust this value based on your needs */
 }
 
 /* Additional styling for h1 elements */
