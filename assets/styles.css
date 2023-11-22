@@ -4,6 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    color: #333;
 }
 
 /* Center flex containers */
@@ -11,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust this value based on your needs */
+    height: 10vh; /* Adjust this value based on your needs */
 }
 
 /* Additional styling for h1 elements */
